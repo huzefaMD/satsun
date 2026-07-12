@@ -37,3 +37,13 @@ if name == "":
 
 print(f"\nHello {name}! How can I help you?")
 print()
+
+# Step 6: The main chatbot loop
+while True:
+
+    # Get student message
+    message = input(f"{name}: ").strip()
+
+    # Skip empty messages
+    if message == "":
+        continue
